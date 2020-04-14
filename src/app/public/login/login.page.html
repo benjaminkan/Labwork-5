@@ -1,26 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
-<ion-content padding>
+<ion-content>
+  <h1>Tervetuloa ArkiApuun!</h1>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="floating">Sähköposti</ion-label>
+      <ion-input type="text" #email required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-label position="floating">Salasana</ion-label>
+      <ion-input type="password" #password required></ion-input>
     </ion-item>
+
     <ion-row>
       <ion-col>
-        <ion-button (click)="login()" color="danger" expand="block">Login</ion-button>
-        <h5>Don't have an account yet?</h5>
-        <ion-button expand="block" color="secondary" routerLink="/register" routerDirection="forward">Register
+        <ion-button (click)="login()" color="secondary" expand="block">Kirjaudu sisään
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block">
+          Kirjaudu käyttäen Googlea
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h5>Uusi käyttäjä?</h5>
+        <ion-button expand="block" color="tertiary" routerLink="/register" routerDirection="forward">Rekisteröinti
         </ion-button>
       </ion-col>
     </ion-row>

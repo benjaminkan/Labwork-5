@@ -1,0 +1,44 @@
+<!--Show the side menu on Login page -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Info</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button routerLink="/members/dashboard">Etusivu</ion-button>
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Tietoa sovelluksesta</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Arkiapu on kahden opiskelijan sovellusidea, jossa voi auttaa muita ihmisiä arjen askareissa.
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="medium">
+    <ion-card-header>
+      <ion-card-title>Tietosuoja</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Tietosuojasta ei ole tietoakaan.
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Tekijät</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Minka Laasonen ja Benjamin Kanerva
+    </ion-card-content>
+  </ion-card>
+</ion-content>

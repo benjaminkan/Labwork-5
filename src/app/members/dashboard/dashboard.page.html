@@ -1,16 +1,59 @@
+<!-- Home page with side menu items -->
 <ion-header>
   <ion-toolbar>
+    <ion-title>Etusivu</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
     <ion-buttons slot="start">
       <ion-button (click)="logout()">
         <ion-icon slot="icon-only" name="log-out"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>My Dashboard</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content padding>
-  <ion-text>
-    <h4>You are now logged in!</h4>
-  </ion-text>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Arkiapu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button routerLink="/members/about">Info</ion-button>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-subtitle>Mikko</ion-card-subtitle>
+      <ion-card-title>Ruohonleikkaus</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Tarvitaan joku nuorukainen leikkaamaan nurmikkoa osoitteeseen Katutie 3. Ruohonleikkuri löytyy ja palkaksi saa 20
+      euroa ja mehua.<br>
+      <ion-button color="warning">Ota työ vastaan</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-subtitle>Annikki</ion-card-subtitle>
+      <ion-card-title>Haravointi</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Tarvitaan joku nuorukainen haravoimaan osoitteeseen Katutie 5. Harava löytyy ja palkaksi saa 10
+      euroa ja keksiä.<br>
+      <ion-button color="warning">Ota työ vastaan</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-subtitle>Juhani</ion-card-subtitle>
+      <ion-card-title>Kaupassa käynti</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Tarvitaan joku nuorukainen käymään kaupassa osoitteeseen Katutie 9. Kestokassi löytyy ja palkaksi saa 8
+      euroa ja korvapuustia.<br>
+      <ion-button color="warning">Ota työ vastaan</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
